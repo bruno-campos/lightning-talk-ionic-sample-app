@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Create</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form #createForm="ngForm" novalidate>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input [(ngModel)]="patient.name" name="name" type="text" #name="ngModel" required>
+      </ion-input>
+    </ion-item>
+
+    <div padding>
+      <button ion-button block (click)="create(createForm)">Create</button>
+    </div>
+  </form>
+</ion-content>

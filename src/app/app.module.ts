@@ -5,6 +5,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { CreatePage } from '../pages/create/create';
 
 import { Resource } from '../providers/resource';
 
@@ -14,7 +15,8 @@ import { Resource } from '../providers/resource';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    CreatePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -25,7 +27,8 @@ import { Resource } from '../providers/resource';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    CreatePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Resource]
 })

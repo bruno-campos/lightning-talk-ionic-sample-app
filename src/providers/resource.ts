@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class Resource {
   apiUrl = 'http://restapi.co/api/';
-  apiKey = 'XXXXX';
+  apiKey = 'rhg0K0A-X3dGMsHWhcsKfRtI';
 
   constructor(public http: Http) {
   }
